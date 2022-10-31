@@ -1,0 +1,19 @@
+@import './css/utilitario.css';
+@import './css/header.css';
+@import './css/home.css';
+
+/*Líderes*/
+
+@import './css/lideres.css';
+
+/*Oração*/
+
+@import './css/oracao.css';
+
+/*Estudo*/
+
+@import './css/estudo.css';
+
+/*Animação*/
+
+@import './css/animacao.css';

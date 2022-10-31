@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  position: relative;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+

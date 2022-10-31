@@ -1,0 +1,185 @@
+.oracao {
+  background: linear-gradient(#111, #000);
+}
+
+.oracao h2 {
+  font: 500 3rem/1.125 "Poppins", sans-serif;
+  color: #ededed;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.oracao h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #ededed;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.form {
+  background-color: #f7f7f7;
+  width: 600px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+input,
+textarea {
+  width: 400px;
+  border-radius: 5px;
+}
+
+input {
+  height: 40px;
+  border: none;
+}
+
+input:focus,
+textarea {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: red;
+  box-shadow: 0 0 0 2px #f05c5c;
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-left: 70px;
+}
+
+#nome,
+#email,
+#telefone,
+#msg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  margin-left: 70px;
+  bottom: 60px;
+  color: #ededed;
+  text-decoration: none;
+  background: linear-gradient(#ff0707, #f20c0c);
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 4px;
+  color: white;
+  max-width: max-content;
+}
+
+.button:hover {
+  background: rgba(255, 7, 7, 0.9);
+  color: #540303;
+}
+
+@media (max-width: 800px) {
+  .oracao h2 {
+    font: 500 2.5rem/1.125 "Poppins", sans-serif;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .oracao h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 400px;
+    height: 650px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: 10px;
+    margin-left: 0px;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+  }
+
+  .button {
+    margin-left: 0px;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .oracao h2 {
+    font: 400 1.7rem/1.125 "Poppins", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .oracao h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 300px;
+    height: 600px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  label {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-left: 0px;
+  }
+
+  input::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .button {
+    padding: 8px 15px;
+    font-size:0.75rem;
+    margin-left: 0px;
+    bottom: 20px;
+  }
+}

@@ -1,0 +1,165 @@
+.header-bg {
+  background: #111;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+img {
+  width: 70px;
+  height: 90px;
+}
+
+.nav-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-item a[href^="./"],
+.nav-item a[href^="#"] {
+  text-transform: uppercase;
+  font: 500 1rem "Roboto", sans-serif;
+  color: #595959;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: #fff;
+}
+
+.nav-item a[href^="./"]::before,
+.nav-item a[href^="#"]::before {
+  content: "+";
+  display: inline-block;
+  margin-right: 5px;
+  color: red;
+}
+
+.nav-item a[href^="./"]::after,
+.nav-item a[href^="#"]::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  margin-bottom: 20px;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.logo-igreja {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.logo-igreja a {
+  text-decoration: none;
+}
+
+.logo-igreja h1 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 25px;
+  max-width: 15ch;
+  line-height: 35px;
+  color: #595959;
+}
+
+.biblia-online {
+  text-decoration: none;
+  padding: 12px 10px;
+  background: linear-gradient(#ff0707, #f20c0c);
+  text-transform: uppercase;
+  font: 500 1rem "Roboto", sans-serif;
+  border-radius: 4px;
+  color: white;
+  max-width: max-content;
+}
+
+.biblia-online:hover {
+  background: rgba(255, 7, 7, 0.9);
+}
+
+@media (max-width: 990px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo-igreja {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 950px) {
+  .nav-item a[href^="./"]::before {
+    display: none;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .logo-igreja h1 {
+    font-family: "Catamaran", sans-serif;
+    font-size: 20px;
+    max-width: 15ch;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 800px){
+  .nav-item {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 500px){
+  .header {
+    padding-bottom: 5px;
+  }
+
+  .nav-item a {
+  font: 500 15px "Roboto", sans-serif;
+  }
+
+  .nav-item a[href^="./"] {
+    font: 500 15px "Roboto", sans-serif;
+  }
+
+  .biblia-online {
+    text-decoration: none;
+    padding: 10px 10px;
+    background: linear-gradient(#ff0707, #f20c0c);
+    text-transform: uppercase;
+    font: 400 0.75rem "Roboto", sans-serif;
+    border-radius: 4px;
+    color: white;
+    max-width: max-content;
+  }
+  
+}
